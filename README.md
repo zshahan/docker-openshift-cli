@@ -67,3 +67,13 @@ You can run `oc` client inside a docker container:
 $ [sudo] docker run -it openshift-cli /bin/sh
 $# oc login https://my-master-openshift.io
 ```
+
+#### Run Docker Image from DockerHub
+
+If you pulled image from Dockerhub:
+
+```bash
+$ docker pull softplan/docker-openshift-cli
+$ docker run -it softplan/docker-openshift-cli
+```
+
