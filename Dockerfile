@@ -11,5 +11,5 @@ RUN curl oc-tools.tar.gz https://github.com/openshift/origin/releases/download/v
 RUN tar -xzf oc-tools.tar.gz && rm -f oc-tools.tar.gz
 RUN ln -s /oc-tools/oc /bin/oc
 
-CMD["oc", "-h"]
+ENTRYPOINT["oc", "-h"]
 
